@@ -13,7 +13,7 @@
         crossorigin="anonymous">
 
     <!-- D3 -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
 
     <!-- topojson -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
@@ -26,13 +26,23 @@
         height: 80vh;
         width: 80vw; 
       }
+      #australia .map path {
+        fill: #aaa;
+        stroke: #fff;
+      }
     </style>
   </head>
 
   <body>
 
+    <div id="australia">
+      <svg width="620px" height="600px">
+        <g class="map"></g>
+      </svg>
+    </div>
+
     <div class="card container-fluid" id="card">
-      <svg width="960" height="600"></svg>
+      
       <div class="card-body text-center">
         <h3 class="card-title" id="title">Choropleth Map of United States Educational Attainment</h3>
         <p class="card-text" id="description">Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)</p>
