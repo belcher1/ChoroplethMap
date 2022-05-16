@@ -25,6 +25,10 @@
         #us-map {
             display: flex;
             justify-content: center;
+            flex-direction: column;
+        }
+        #tooltip {
+            position: absolute;
         }
     </style>
   </head>
@@ -35,10 +39,11 @@
             <div class="card" id="card">
                 <div id="us-map">
                     <svg></svg>
+                    <div id=legend></div>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title" id="title">Card title</h5>
-                  <p class="card-text" id="description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title" id="title">Choropleth Map Using D3.js</h5>
+                  <p class="card-text" id="description">US Educational Attainment of adults aged 25 and older with a bachelor's degree or higher(2010-2014).</p>
                 </div>
             </div>
         </div>
